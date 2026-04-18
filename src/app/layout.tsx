@@ -21,9 +21,9 @@ const bodyFont = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Adaptive Learning System",
+  title: "AdaptLearn - Master Tech Interviews with Adaptive Learning",
   description:
-    "Track-agnostic adaptive learning MVP for DSA, SQL, and JavaScript fundamentals with diagnosis and personalized roadmap.",
+    "AdaptLearn is an adaptive learning platform for DSA, SQL, and JavaScript. Track your progress, compete on leaderboards, and master interview prep with AI-powered personalized learning.",
 };
 
 export default function RootLayout({
