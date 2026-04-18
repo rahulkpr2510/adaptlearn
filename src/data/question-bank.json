@@ -1,0 +1,167 @@
+[
+  {
+    "id": "qb-1",
+    "question": "What is the time complexity of finding the maximum element in an unsorted array of size n?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "correctAnswer": 2,
+    "explanation": "You must inspect each element at least once to guarantee the maximum.",
+    "difficulty": "easy",
+    "tags": ["Arrays"]
+  },
+  {
+    "id": "qb-2",
+    "question": "Which array preprocessing technique helps answer many sum(l, r) queries in O(1) time per query?",
+    "options": ["Difference array", "Prefix sum", "Sliding window", "Two pointers"],
+    "correctAnswer": 1,
+    "explanation": "Prefix sums allow range sum queries using prefix[r] - prefix[l-1].",
+    "difficulty": "easy",
+    "tags": ["Arrays"]
+  },
+  {
+    "id": "qb-3",
+    "question": "To rotate an array right by k positions efficiently in-place, which strategy is commonly used?",
+    "options": [
+      "Repeatedly swap adjacent elements k times",
+      "Use three reversals",
+      "Sort the array first",
+      "Use recursion for each index"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Reverse whole array, reverse first k, then reverse remaining n-k.",
+    "difficulty": "medium",
+    "tags": ["Arrays", "Two Pointers"]
+  },
+  {
+    "id": "qb-4",
+    "question": "For maximum sum subarray of fixed size k, which approach gives O(n) time?",
+    "options": [
+      "Recompute each window sum from scratch",
+      "Sort every window",
+      "Use a running sum sliding window",
+      "Use DFS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Subtract outgoing element and add incoming element while sliding.",
+    "difficulty": "easy",
+    "tags": ["Sliding Window"]
+  },
+  {
+    "id": "qb-5",
+    "question": "In variable-size sliding window problems, when should the left pointer move?",
+    "options": [
+      "Whenever the window size is odd",
+      "Only when right pointer reaches the end",
+      "When a constraint is violated",
+      "Never"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Shrink while invalid to restore constraints like distinct count or sum limit.",
+    "difficulty": "medium",
+    "tags": ["Sliding Window", "Two Pointers"]
+  },
+  {
+    "id": "qb-6",
+    "question": "Longest substring without repeating characters is usually solved with:",
+    "options": ["Binary search", "Sliding window with frequency map", "Topological sort", "Heap"],
+    "correctAnswer": 1,
+    "explanation": "A window with last seen or counts maintains uniqueness in O(n).",
+    "difficulty": "medium",
+    "tags": ["Sliding Window"]
+  },
+  {
+    "id": "qb-7",
+    "question": "In a sorted array, which technique gives O(n) solution for two-sum target problem?",
+    "options": ["Brute force nested loops", "Hash map", "Two pointers from both ends", "Heap"],
+    "correctAnswer": 2,
+    "explanation": "Move left or right pointer based on current sum compared to target.",
+    "difficulty": "easy",
+    "tags": ["Two Pointers"]
+  },
+  {
+    "id": "qb-8",
+    "question": "Removing duplicates from sorted array in-place is best modeled by:",
+    "options": ["BFS", "Two pointers (read/write)", "Binary lifting", "Stack only"],
+    "correctAnswer": 1,
+    "explanation": "One pointer scans, another writes next unique value.",
+    "difficulty": "easy",
+    "tags": ["Two Pointers", "Arrays"]
+  },
+  {
+    "id": "qb-9",
+    "question": "Container With Most Water can be solved in O(n) using:",
+    "options": ["Dynamic programming", "Greedy two pointers", "Binary search every pair", "Union find"],
+    "correctAnswer": 1,
+    "explanation": "Start wide and move the smaller height pointer inward.",
+    "difficulty": "medium",
+    "tags": ["Two Pointers"]
+  },
+  {
+    "id": "qb-10",
+    "question": "Which invariant is essential in binary search?",
+    "options": [
+      "Array must be sorted or predicate monotonic",
+      "Array must have distinct values",
+      "Array must have even length",
+      "Right pointer always decreases by 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Binary search relies on order or monotonic truth values.",
+    "difficulty": "easy",
+    "tags": ["Binary Search"]
+  },
+  {
+    "id": "qb-11",
+    "question": "To find first occurrence of target using binary search, what changes from basic search?",
+    "options": [
+      "Stop immediately when target is found",
+      "Move right to search larger indices",
+      "Record answer and continue on left half",
+      "Switch to linear scan"
+    ],
+    "correctAnswer": 2,
+    "explanation": "You keep searching left to find the earliest index.",
+    "difficulty": "medium",
+    "tags": ["Binary Search"]
+  },
+  {
+    "id": "qb-12",
+    "question": "Binary search on answer is valid when:",
+    "options": [
+      "The answer space can be tested by a monotonic predicate",
+      "The input array is unsorted",
+      "You need all permutations",
+      "The recursion depth must be constant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "If feasible(x) changes once from false to true, binary search works.",
+    "difficulty": "hard",
+    "tags": ["Binary Search"]
+  },
+  {
+    "id": "qb-13",
+    "question": "For shortest path in an unweighted graph, the preferred traversal is:",
+    "options": ["DFS", "BFS", "Dijkstra", "Bellman-Ford"],
+    "correctAnswer": 1,
+    "explanation": "BFS explores level by level and yields shortest edge count path.",
+    "difficulty": "easy",
+    "tags": ["Graph Basics"]
+  },
+  {
+    "id": "qb-14",
+    "question": "A graph with n nodes and n-1 edges is guaranteed to be a tree when it is:",
+    "options": ["Weighted", "Directed", "Connected", "Complete"],
+    "correctAnswer": 2,
+    "explanation": "Connected + n-1 edges implies exactly one path between nodes.",
+    "difficulty": "medium",
+    "tags": ["Graph Basics"]
+  },
+  {
+    "id": "qb-15",
+    "question": "What is a common representation for sparse graphs in coding interviews?",
+    "options": ["Adjacency matrix", "Adjacency list", "2D prefix table", "Fenwick tree"],
+    "correctAnswer": 1,
+    "explanation": "Adjacency list stores only existing edges, saving memory for sparse graphs.",
+    "difficulty": "easy",
+    "tags": ["Graph Basics", "Arrays"]
+  }
+]
